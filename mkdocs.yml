@@ -1,21 +1,9 @@
 site_name: LX AI Docs
-theme:
-  name: material
-docs_dir: 'docs'
-site_dir: 'site'
 repo_url: https://github.com/Ikaros-521/LX_AI
 repo_name: 洛曦AI
-markdown_extensions:
-  - attr_list
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
+
+theme:
+  name: material
   language: zh
   favicon: static/images/favicon.png
   icon:
@@ -30,13 +18,31 @@ markdown_extensions:
   palette:
     scheme: default
     primary: blue
+
+docs_dir: 'docs'
+site_dir: 'site'
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 extra:
   generator: false
   analytics:
     provider: google
     property: G-FR32RDV2MT
+
 copyright: >
   Copyright &copy; 2025 <a href="https://github.com/Ikaros-521/LX_AI">洛曦AI</a> & Ikaros-521
+
 nav:
   - 首页: index.md
   - 安装: install.md
