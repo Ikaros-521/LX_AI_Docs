@@ -32,15 +32,7 @@
 
 github token: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
-## ⭐️ Star 经历
 
-[![Star History Chart](https://api.star-history.com/svg?repos=LuoXi-Project/LX_Project_Template&type=Date)](https://star-history.com/#LuoXi-Project/LX_Project_Template&Date)
-
-
-## 更新日志
-
-- 2024-10-08
-    - 初版demo发布
 
 
 [python]: https://img.shields.io/badge/python-3.10+-blue.svg?labelColor=black
