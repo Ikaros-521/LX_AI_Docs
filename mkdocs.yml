@@ -1,5 +1,8 @@
-site_name: 洛曦AI
-site_dir: site
+site_name: LX AI Docs
+theme:
+  name: material
+docs_dir: 'docs'
+site_dir: 'site'
 repo_url: https://github.com/Ikaros-521/LX_AI
 repo_name: 洛曦AI
 markdown_extensions:
@@ -13,8 +16,6 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-theme:
-  name: material
   language: zh
   favicon: static/images/favicon.png
   icon:
