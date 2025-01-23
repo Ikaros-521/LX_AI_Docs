@@ -6,7 +6,7 @@
 
 <div align="center">
 
-# ✨ 洛曦 项目模板  ✨
+# ✨ 洛曦AI 文档  ✨
 
 [![][python]][python]
 [![][github-release-shield]][github-release-link]
@@ -20,31 +20,15 @@
 
 ## 前言
 
+基于 `mkdocs-material` 编写，官方文档：[mkdocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/)  
+    
+安装 `pip install mkdocs-material`  
 
-## 环境
+构建静态网站 `mkdocs build`  
 
-python: 3.10  
+文档本地实时预览 `mkdocs serve`  
 
-## 安装
-
-安装依赖：`pip install -r requirements.txt`  
-
-## 运行
-
-
-## 💡 提问的智慧
-
-提交issues前请先阅读以下内容
-
-https://lug.ustc.edu.cn/wiki/doc/smart-questions
-
-## 🀅 开发&项目相关
-
-可以使用 GitHub Codespaces 进行在线开发：
-
-[![][github-codespace-shield]][github-codespace-link]  
-
-
+使用github actions自动进行构建发布更新  
 
 ## ⭐️ Star 经历
 
