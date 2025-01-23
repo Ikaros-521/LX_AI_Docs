@@ -48,11 +48,9 @@ nav:
   - 安装: install.md
   - 使用&功能讲解:
     - 基础功能: features/basic.md
-    - API接口: features/api.md
     - 平台: features/platform.md
     - 大语言模型: features/llm.md
-    - 语音合成: features/tts.md
-    - 变声: features/svc.md
+    - 文本转语音: features/tts.md
     - 虚拟身体: features/visual_body.md
     - 其他: features/other.md
   - 常见问题: faq.md
