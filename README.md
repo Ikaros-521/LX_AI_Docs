@@ -1,6 +1,6 @@
 <div align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/LuoXi-Project/LX_Project_Template/refs/heads/main/ui/logo.png" width="240" height="240" alt="点我跳转文档">
+    <img src="https://raw.githubusercontent.com/Ikaros-521/LX_AI_Docs/refs/heads/main/ui/logo.png" width="240" height="240" alt="点我跳转文档">
   </a>
 </div>
 
@@ -17,6 +17,10 @@
 [![][github-license-shield]][github-license-link]
 
 </div>
+
+## 在线文档
+
+[洛曦AI 文档](https://ikaros-521.github.io/LX_AI_Docs/site/)
 
 ## 使用说明
 
@@ -37,27 +41,27 @@ github token: [https://github.com/settings/tokens](https://github.com/settings/t
 
 [python]: https://img.shields.io/badge/python-3.10+-blue.svg?labelColor=black
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
-[github-action-release-link]: https://github.com/actions/workflows/LuoXi-Project/LX_Project_Template/release.yml
-[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/LuoXi-Project/LX_Project_Template/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-action-test-link]: https://github.com/actions/workflows/LuoXi-Project/LX_Project_Template/test.yml
-[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/LuoXi-Project/LX_Project_Template/test.yml?label=test&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
-[github-codespace-link]: https://codespaces.new/LuoXi-Project/LX_Project_Template
+[github-action-release-link]: https://github.com/actions/workflows/Ikaros-521/LX_AI_Docs/release.yml
+[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/Ikaros-521/LX_AI_Docs/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
+[github-action-test-link]: https://github.com/actions/workflows/Ikaros-521/LX_AI_Docs/test.yml
+[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/Ikaros-521/LX_AI_Docs/test.yml?label=test&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
+[github-codespace-link]: https://codespaces.new/Ikaros-521/LX_AI_Docs
 [github-codespace-shield]: https://github.com/codespaces/badge.svg
-[github-contributors-link]: https://github.com/LuoXi-Project/LX_Project_Template/graphs/contributors
-[github-contributors-shield]: https://img.shields.io/github/contributors/LuoXi-Project/LX_Project_Template?color=c4f042&labelColor=black&style=flat-square
-[github-forks-link]: https://github.com/LuoXi-Project/LX_Project_Template/network/members
-[github-forks-shield]: https://img.shields.io/github/forks/LuoXi-Project/LX_Project_Template?color=8ae8ff&labelColor=black&style=flat-square
-[github-issues-link]: https://github.com/LuoXi-Project/LX_Project_Template/issues
-[github-issues-shield]: https://img.shields.io/github/issues/LuoXi-Project/LX_Project_Template?color=ff80eb&labelColor=black&style=flat-square
-[github-license-link]: https://github.com/LuoXi-Project/LX_Project_Template/blob/main/LICENSE
-[github-license-shield]: https://img.shields.io/github/license/LuoXi-Project/LX_Project_Template?color=white&labelColor=black&style=flat-square
-[github-release-link]: https://github.com/LuoXi-Project/LX_Project_Template/releases
-[github-release-shield]: https://img.shields.io/github/v/release/LuoXi-Project/LX_Project_Template?color=369eff&labelColor=black&logo=github&style=flat-square
-[github-releasedate-link]: https://github.com/LuoXi-Project/LX_Project_Template/releases
-[github-releasedate-shield]: https://img.shields.io/github/release-date/LuoXi-Project/LX_Project_Template?labelColor=black&style=flat-square
-[github-stars-link]: https://github.com/LuoXi-Project/LX_Project_Template/network/stargazers
-[github-stars-shield]: https://img.shields.io/github/stars/LuoXi-Project/LX_Project_Template?color=ffcb47&labelColor=black&style=flat-square
-[pr-welcome-link]: https://github.com/LuoXi-Project/LX_Project_Template/pulls
+[github-contributors-link]: https://github.com/Ikaros-521/LX_AI_Docs/graphs/contributors
+[github-contributors-shield]: https://img.shields.io/github/contributors/Ikaros-521/LX_AI_Docs?color=c4f042&labelColor=black&style=flat-square
+[github-forks-link]: https://github.com/Ikaros-521/LX_AI_Docs/network/members
+[github-forks-shield]: https://img.shields.io/github/forks/Ikaros-521/LX_AI_Docs?color=8ae8ff&labelColor=black&style=flat-square
+[github-issues-link]: https://github.com/Ikaros-521/LX_AI_Docs/issues
+[github-issues-shield]: https://img.shields.io/github/issues/Ikaros-521/LX_AI_Docs?color=ff80eb&labelColor=black&style=flat-square
+[github-license-link]: https://github.com/Ikaros-521/LX_AI_Docs/blob/main/LICENSE
+[github-license-shield]: https://img.shields.io/github/license/Ikaros-521/LX_AI_Docs?color=white&labelColor=black&style=flat-square
+[github-release-link]: https://github.com/Ikaros-521/LX_AI_Docs/releases
+[github-release-shield]: https://img.shields.io/github/v/release/Ikaros-521/LX_AI_Docs?color=369eff&labelColor=black&logo=github&style=flat-square
+[github-releasedate-link]: https://github.com/Ikaros-521/LX_AI_Docs/releases
+[github-releasedate-shield]: https://img.shields.io/github/release-date/Ikaros-521/LX_AI_Docs?labelColor=black&style=flat-square
+[github-stars-link]: https://github.com/Ikaros-521/LX_AI_Docs/network/stargazers
+[github-stars-shield]: https://img.shields.io/github/stars/Ikaros-521/LX_AI_Docs?color=ffcb47&labelColor=black&style=flat-square
+[pr-welcome-link]: https://github.com/Ikaros-521/LX_AI_Docs/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
 [profile-link]: https://github.com/LuoXi-Project
 
