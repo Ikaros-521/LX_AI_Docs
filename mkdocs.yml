@@ -46,8 +46,7 @@ copyright: >
 nav:
   - 首页: index.md
   - 安装: install.md
-  - 使用: use.md
-  - 功能介绍:
+  - 使用&功能讲解:
     - 基础功能: features/basic.md
     - API接口: features/api.md
     - 平台: features/platform.md
@@ -57,8 +56,5 @@ nav:
     - 虚拟身体: features/visual_body.md
     - 其他: features/other.md
   - 常见问题: faq.md
-  - 开发计划:
-    - 待办列表: plans/todo.md
-    - 长期规划: plans/long-term.md
   - 更新日志: changelog.md
   - 关于: about.md
