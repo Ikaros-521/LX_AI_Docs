@@ -18,7 +18,7 @@
 
 </div>
 
-## 前言
+## 使用说明
 
 基于 `mkdocs-material` 编写，官方文档：[mkdocs-material](https://squidfunk.github.io/mkdocs-material/getting-started/)  
     
@@ -29,6 +29,8 @@
 文档本地实时预览 `mkdocs serve`  
 
 使用github actions自动进行构建发布更新  
+
+github token: [https://github.com/settings/tokens](https://github.com/settings/tokens)
 
 ## ⭐️ Star 经历
 
