@@ -64,4 +64,5 @@
 
 - 项目主页：[GitHub](https://github.com/Ikaros-521/LX_AI)
 - 问题反馈：[Issues](https://github.com/Ikaros-521/LX_AI/issues)
-
+- 官方QQ群：832618973  
+- 官方QQ频道：[https://pd.qq.com/s/f247aeq3j](https://pd.qq.com/s/f247aeq3j)  
