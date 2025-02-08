@@ -1885,18 +1885,22 @@
 <p>统一配置是系统的全局设置，用于管理系统级别的参数和选项。</p>
 <h3 id="_3">配置项说明</h3>
 <ul>
-<li><strong>系统设置</strong></li>
+<li>
+<p><strong>系统设置</strong></p>
+<ul>
 <li>系统名称：显示在界面标题和日志中的系统名称</li>
 <li>调试模式：是否启用调试日志</li>
-<li>
-<p>日志级别：系统日志的详细程度</p>
+<li>日志级别：系统日志的详细程度</li>
+</ul>
 </li>
 <li>
 <p><strong>任务配置</strong></p>
-</li>
+<ul>
 <li>任务队列大小：系统可以同时处理的最大任务数</li>
 <li>任务超时时间：单个任务的最大执行时间</li>
 <li>重试策略：任务失败后的重试机制</li>
+</ul>
+</li>
 </ul>
 <h3 id="_4">使用说明</h3>
 <ol>
@@ -1909,18 +1913,22 @@
 <h3 id="_6">配置列表</h3>
 <p>在配置列表中，您可以：</p>
 <ol>
-<li>创建新配置</li>
+<li>
+<p>创建新配置</p>
+<ul>
 <li>点击"新建配置"按钮</li>
 <li>填写配置名称和说明</li>
 <li>选择平台和功能模块</li>
-<li>
-<p>设置具体参数</p>
+<li>设置具体参数</li>
+</ul>
 </li>
 <li>
 <p>管理现有配置</p>
-</li>
+<ul>
 <li>编辑：修改配置内容</li>
 <li>删除：移除不需要的配置</li>
+</ul>
+</li>
 </ol>
 <h2 id="_7">功能管理</h2>
 <h3 id="1">1. 消息优先级</h3>
@@ -1933,139 +1941,157 @@
 </ul>
 <h4 id="_9">支持的消息类型</h4>
 <ol>
-<li><strong>互动消息</strong></li>
+<li>
+<p><strong>互动消息</strong></p>
+<ul>
 <li>弹幕回复: 对用户弹幕的回复</li>
 <li>LLM回复: AI大语言模型的回复</li>
-<li>
-<p>念弹幕: 直接朗读用户的弹幕内容</p>
+<li>念弹幕: 直接朗读用户的弹幕内容</li>
+</ul>
 </li>
 <li>
 <p><strong>答谢消息</strong></p>
-</li>
+<ul>
 <li>入场答谢: 感谢用户进入直播间</li>
 <li>礼物答谢: 感谢用户赠送礼物</li>
-<li>
-<p>关注答谢: 感谢用户关注主播</p>
+<li>关注答谢: 感谢用户关注主播</li>
+</ul>
 </li>
 <li>
 <p><strong>任务消息</strong></p>
-</li>
+<ul>
 <li>复读-文案: 复读功能发送的文案</li>
 <li>闲时任务-文案: 闲时任务发送的文案</li>
 <li>定时任务-文案: 定时任务发送的文案</li>
 <li>本地问答-文案: 本地问答功能的回复文案</li>
+</ul>
+</li>
 </ol>
 <h4 id="_10">优先级设置建议</h4>
 <ol>
-<li><strong>高优先级消息</strong> (建议20-30)</li>
+<li>
+<p><strong>高优先级消息</strong> (建议20-30)</p>
+<ul>
 <li>礼物答谢</li>
 <li>LLM回复</li>
 <li>本地问答-文案</li>
-<li>
-<p>复读-文案</p>
+<li>复读-文案</li>
+</ul>
 </li>
 <li>
 <p><strong>中优先级消息</strong> (建议10-19)</p>
-</li>
+<ul>
 <li>弹幕回复</li>
 <li>关注答谢</li>
 <li>入场答谢</li>
-<li>
-<p>念弹幕</p>
+<li>念弹幕</li>
+</ul>
 </li>
 <li>
 <p><strong>低优先级消息</strong> (建议1-9)</p>
-</li>
+<ul>
 <li>闲时任务-文案</li>
 <li>定时任务-文案</li>
+</ul>
+</li>
 </ol>
 <h4 id="_11">使用场景</h4>
 <ol>
-<li><strong>礼物互动优先</strong></li>
+<li>
+<p><strong>礼物互动优先</strong></p>
+<ul>
 <li>将礼物答谢设为最高优先级</li>
 <li>确保及时感谢打赏用户</li>
-<li>
-<p>提升用户打赏积极性</p>
+<li>提升用户打赏积极性</li>
+</ul>
 </li>
 <li>
 <p><strong>对话流畅性</strong></p>
-</li>
+<ul>
 <li>提高弹幕回复和LLM回复优先级</li>
 <li>保证对话的连贯性</li>
-<li>
-<p>增强互动的即时性</p>
+<li>增强互动的即时性</li>
+</ul>
 </li>
 <li>
 <p><strong>基础任务保障</strong></p>
-</li>
+<ul>
 <li>降低自动任务的优先级</li>
 <li>避免打断重要互动</li>
 <li>保证基础任务正常执行</li>
+</ul>
+</li>
 </ol>
 <h4 id="_12">使用建议</h4>
 <ol>
-<li><strong>优先级分配</strong></li>
+<li>
+<p><strong>优先级分配</strong></p>
+<ul>
 <li>根据直播间实际情况调整优先级</li>
 <li>保持适当的优先级差距</li>
-<li>
-<p>避免过多消息使用相同优先级</p>
+<li>避免过多消息使用相同优先级</li>
+</ul>
 </li>
 <li>
 <p><strong>数值设置</strong></p>
-</li>
+<ul>
 <li>建议使用10的倍数设置基准优先级</li>
 <li>预留优先级调整空间</li>
-<li>
-<p>重要消息类型之间保持10-20的优先级差距</p>
+<li>重要消息类型之间保持10-20的优先级差距</li>
+</ul>
 </li>
 <li>
 <p><strong>动态调整</strong></p>
-</li>
+<ul>
 <li>观察消息处理效果</li>
 <li>根据直播节奏调整优先级</li>
-<li>
-<p>特殊活动时可临时调整优先级</p>
+<li>特殊活动时可临时调整优先级</li>
+</ul>
 </li>
 <li>
 <p><strong>注意事项</strong></p>
-</li>
+<ul>
 <li>优先级设置过于集中可能导致消息堆积</li>
 <li>过大的优先级差距可能导致低优先级消息长期得不到处理</li>
 <li>建议定期检查和优化优先级设置</li>
+</ul>
+</li>
 </ol>
 <h3 id="2">2. 消息过滤</h3>
 <p>消息过滤功能用于管理和控制直播间的消息流,通过多种过滤机制来保证消息质量和处理效率。</p>
 <h4 id="_13">基础设置</h4>
 <ol>
-<li><strong>触发&amp;过滤前后缀</strong></li>
+<li>
+<p><strong>触发&amp;过滤前后缀</strong></p>
+<ul>
 <li><strong>弹幕触发前缀</strong>: 必须包含指定前缀才能触发(每行一个)</li>
 <li><strong>弹幕触发后缀</strong>: 必须包含指定后缀才能触发(每行一个)</li>
 <li><strong>弹幕过滤前缀</strong>: 包含指定前缀的消息将被过滤(每行一个)</li>
 <li><strong>弹幕过滤后缀</strong>: 包含指定后缀的消息将被过滤(每行一个)</li>
 <li><strong>LLM触发前缀</strong>: 触发大语言模型回复的前缀(每行一个)</li>
-<li>
-<p><strong>LLM触发后缀</strong>: 触发大语言模型回复的后缀(每行一个)</p>
+<li><strong>LLM触发后缀</strong>: 触发大语言模型回复的后缀(每行一个)</li>
+</ul>
 </li>
 <li>
 <p><strong>消息长度限制</strong></p>
-</li>
+<ul>
 <li><strong>最大单词数</strong>: 限制大语言模型回复的最大单词数</li>
 <li><strong>最大字符数</strong>: 限制大语言模型回复的最大字符数</li>
-<li>
-<p>注意: 流式输出模式下不会进行限制</p>
+<li>注意: 流式输出模式下不会进行限制</li>
+</ul>
 </li>
 <li>
 <p><strong>数据转换与特殊内容处理</strong></p>
-</li>
+<ul>
 <li><strong>音频合成前的文本切分</strong>: 将长文本按标点符号切分成短句</li>
 <li><strong>用户名中的数字转中文</strong>: 将用户名中的数字转换为中文读音</li>
-<li>
-<p><strong>弹幕表情过滤</strong>: 过滤掉弹幕中的表情符号</p>
+<li><strong>弹幕表情过滤</strong>: 过滤掉弹幕中的表情符号</li>
+</ul>
 </li>
 <li>
 <p><strong>消息遗忘&amp;保留设置</strong>
-   支持以下消息类型的遗忘间隔和保留数量设置:</p>
-</li>
+      支持以下消息类型的遗忘间隔和保留数量设置:</p>
+<ul>
 <li>弹幕消息</li>
 <li>礼物消息</li>
 <li>入场消息</li>
@@ -2074,220 +2100,254 @@
 <li>定时任务</li>
 <li>点赞消息</li>
 <li>闲时任务</li>
-<li>
-<p>图像识别(暂无)</p>
+<li>图像识别(暂无)</li>
+</ul>
 </li>
 <li>
 <p><strong>弹幕黑名单</strong></p>
-</li>
+<ul>
 <li>黑名单开关: 控制是否启用黑名单功能</li>
 <li>黑名单用户列表: 配置需要过滤的用户名(每行一个)</li>
+</ul>
+</li>
 </ol>
 <h4 id="_14">过滤机制说明</h4>
 <ol>
-<li><strong>前后缀过滤</strong></li>
+<li>
+<p><strong>前后缀过滤</strong></p>
+<ul>
 <li>触发前缀示例: 配置"#"，则"#你好"会被触发</li>
 <li>触发后缀示例: 配置"。"，则"你好。"会被触发</li>
 <li>过滤前缀示例: 配置"@"，则"@你好"会被过滤</li>
-<li>
-<p>过滤后缀示例: 配置"?"，则"你好?"会被过滤</p>
+<li>过滤后缀示例: 配置"?"，则"你好?"会被过滤</li>
+</ul>
 </li>
 <li>
 <p><strong>消息遗忘机制</strong></p>
-</li>
+<ul>
 <li>遗忘间隔: 设置消息在队列中的保留时间(秒)</li>
 <li>保留数量: 设置队列中最多保留的消息数量</li>
-<li>
-<p>超过间隔或数量的消息将被自动清理</p>
+<li>超过间隔或数量的消息将被自动清理</li>
+</ul>
 </li>
 <li>
 <p><strong>黑名单机制</strong></p>
-</li>
+<ul>
 <li>完全匹配: 用户名需要完全匹配才会被过滤</li>
+</ul>
+</li>
 </ol>
 <h4 id="_15">使用场景</h4>
 <ol>
-<li><strong>直播互动优化</strong></li>
+<li>
+<p><strong>直播互动优化</strong></p>
+<ul>
 <li>过滤无效弹幕</li>
 <li>控制互动频率</li>
-<li>
-<p>维护直播间秩序</p>
+<li>维护直播间秩序</li>
+</ul>
 </li>
 <li>
 <p><strong>性能优化</strong></p>
-</li>
+<ul>
 <li>控制消息队列大小</li>
 <li>避免消息堆积</li>
-<li>
-<p>优化处理效率</p>
+<li>优化处理效率</li>
+</ul>
 </li>
 <li>
 <p><strong>内容管理</strong></p>
-</li>
+<ul>
 <li>过滤不当内容</li>
 <li>屏蔽特定用户</li>
 <li>控制互动质量</li>
+</ul>
+</li>
 </ol>
 <h4 id="_16">使用建议</h4>
 <ol>
-<li><strong>前后缀设置</strong></li>
+<li>
+<p><strong>前后缀设置</strong></p>
+<ul>
 <li>根据直播需求设置合适的触发条件</li>
 <li>避免过于严格的过滤规则</li>
-<li>
-<p>定期更新过滤规则</p>
+<li>定期更新过滤规则</li>
+</ul>
 </li>
 <li>
 <p><strong>遗忘参数配置</strong></p>
-</li>
+<ul>
 <li>根据直播间活跃度调整遗忘间隔</li>
 <li>合理设置保留数量</li>
-<li>
-<p>不同类型消息可以设置不同参数</p>
+<li>不同类型消息可以设置不同参数</li>
+</ul>
 </li>
 <li>
 <p><strong>黑名单管理</strong></p>
-</li>
+<ul>
 <li>及时更新黑名单列表</li>
 <li>记录违规用户信息</li>
-<li>
-<p>定期清理过期记录</p>
+<li>定期清理过期记录</li>
+</ul>
 </li>
 <li>
 <p><strong>注意事项</strong></p>
-</li>
+<ul>
 <li>过滤规则不要过于复杂</li>
 <li>定期检查过滤效果</li>
 <li>及时调整配置参数</li>
 <li>保持黑名单的时效性</li>
+</ul>
+</li>
 </ol>
 <h3 id="3">3. 违禁词设置</h3>
 <p>违禁词功能用于自动过滤和处理直播间中的不当内容,通过配置违禁词库和处理机制来维护直播间的良好环境。</p>
 <h4 id="_17">基础设置</h4>
 <ol>
-<li><strong>违禁词处理机制</strong></li>
+<li>
+<p><strong>违禁词处理机制</strong></p>
+<ul>
 <li><strong>违禁词替换</strong>: 将违禁词替换为指定的文本内容</li>
 <li><strong>违禁语句丢弃</strong>: 含有违禁词的整句话将被丢弃</li>
-<li>
-<p><strong>不处理违禁词</strong>: 关闭违禁词处理功能</p>
+<li><strong>不处理违禁词</strong>: 关闭违禁词处理功能</li>
+</ul>
 </li>
 <li>
 <p><strong>替换内容</strong></p>
-</li>
+<ul>
 <li>在选择"违禁词替换"机制时使用</li>
 <li>设置将违禁词替换成的文本内容</li>
 <li>为空时将直接删除违禁词</li>
+</ul>
+</li>
 </ol>
 <h4 id="_18">违禁词管理</h4>
 <ol>
-<li><strong>添加违禁词</strong></li>
+<li>
+<p><strong>添加违禁词</strong></p>
+<ul>
 <li>单个添加: 手动输入违禁词</li>
 <li>批量导入: 支持批量导入违禁词列表</li>
-<li>
-<p>记录信息: 自动记录添加时间和操作用户</p>
+<li>记录信息: 自动记录添加时间和操作用户</li>
+</ul>
 </li>
 <li>
 <p><strong>删除操作</strong></p>
-</li>
+<ul>
 <li>单个删除: 删除指定的违禁词</li>
 <li>批量删除: 删除选中的多个违禁词</li>
-<li>
-<p>清空操作: 清空所有违禁词(不可恢复)</p>
+<li>清空操作: 清空所有违禁词(不可恢复)</li>
+</ul>
 </li>
 <li>
 <p><strong>查询功能</strong></p>
-</li>
+<ul>
 <li>违禁词搜索: 支持关键词搜索</li>
 <li>时间范围: 可按添加时间筛选</li>
 <li>分页显示: 支持自定义每页显示数量</li>
+</ul>
+</li>
 </ol>
 <h4 id="_19">处理机制说明</h4>
 <ol>
-<li><strong>违禁词替换模式</strong></li>
+<li>
+<p><strong>违禁词替换模式</strong></p>
+<ul>
 <li>仅替换命中的违禁词部分</li>
 <li>其他内容保持不变</li>
-<li>
-<p>示例: </p>
-<ul>
+<li>示例: <ul>
 <li>违禁词: "坏话"</li>
 <li>替换为: "***"</li>
 <li>原文: "这是一句坏话"</li>
 <li>结果: "这是一句***"</li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>语句丢弃模式</strong></p>
-</li>
+<ul>
 <li>发现违禁词即丢弃整句</li>
 <li>不进行部分替换</li>
-<li>
-<p>示例:</p>
-<ul>
+<li>示例:<ul>
 <li>违禁词: "坏话"</li>
 <li>原文: "这是一句坏话"</li>
 <li>结果: ""(整句被丢弃)</li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>不处理模式</strong></p>
-</li>
+<ul>
 <li>仅记录违禁词</li>
 <li>不进行任何处理</li>
 <li>用于数据统计和分析</li>
+</ul>
+</li>
 </ol>
 <h4 id="_20">使用场景</h4>
 <ol>
-<li><strong>内容净化</strong></li>
+<li>
+<p><strong>内容净化</strong></p>
+<ul>
 <li>过滤不文明用语</li>
 <li>屏蔽敏感词汇</li>
-<li>
-<p>维护直播环境</p>
+<li>维护直播环境</li>
+</ul>
 </li>
 <li>
 <p><strong>合规管理</strong></p>
-</li>
+<ul>
 <li>遵守平台规范</li>
 <li>预防违规内容</li>
-<li>
-<p>降低运营风险</p>
+<li>降低运营风险</li>
+</ul>
 </li>
 <li>
 <p><strong>数据分析</strong></p>
-</li>
+<ul>
 <li>统计违禁词出现频率</li>
 <li>分析用户行为</li>
 <li>优化管理策略</li>
+</ul>
+</li>
 </ol>
 <h4 id="_21">使用建议</h4>
 <ol>
-<li><strong>词库管理</strong></li>
+<li>
+<p><strong>词库管理</strong></p>
+<ul>
 <li>及时更新违禁词库</li>
 <li>分类管理不同类型的违禁词</li>
-<li>
-<p>定期清理过期或无效的违禁词</p>
+<li>定期清理过期或无效的违禁词</li>
+</ul>
 </li>
 <li>
 <p><strong>机制选择</strong></p>
-</li>
+<ul>
 <li>根据直播内容选择合适的处理机制</li>
 <li>避免过于严格影响用户体验</li>
-<li>
-<p>可针对不同场景切换不同机制</p>
+<li>可针对不同场景切换不同机制</li>
+</ul>
 </li>
 <li>
 <p><strong>效果监控</strong></p>
-</li>
+<ul>
 <li>定期检查过滤效果</li>
 <li>收集用户反馈</li>
-<li>
-<p>及时调整处理策略</p>
+<li>及时调整处理策略</li>
+</ul>
 </li>
 <li>
 <p><strong>注意事项</strong></p>
-</li>
+<ul>
 <li>违禁词设置要合理,避免误伤</li>
 <li>定期备份违禁词库</li>
 <li>清空操作需谨慎,不可恢复</li>
 <li>建议保留操作日志</li>
+</ul>
+</li>
 </ol>
 <h3 id="4">4. 弹幕&amp;回复模板</h3>
 <p>弹幕&amp;回复模板功能用于统一管理和格式化各类消息的展示形式,包括念弹幕、弹幕模板和LLM回复模板三个子功能。</p>
@@ -2298,123 +2358,137 @@
 </ul>
 <h4 id="_23">功能模块</h4>
 <ol>
-<li><strong>念弹幕功能</strong></li>
+<li>
+<p><strong>念弹幕功能</strong></p>
+<ul>
 <li><strong>功能开关</strong>: 单独控制念弹幕功能的启用/禁用</li>
 <li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
 <li><strong>文案配置</strong>: 设置念弹幕时的文案格式</li>
-<li>
-<p><strong>使用场景</strong>: 将用户弹幕内容以特定格式朗读出来</p>
+<li><strong>使用场景</strong>: 将用户弹幕内容以特定格式朗读出来</li>
+</ul>
 </li>
 <li>
 <p><strong>弹幕模板功能</strong></p>
-</li>
+<ul>
 <li><strong>功能开关</strong>: 单独控制弹幕模板功能的启用/禁用</li>
 <li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
 <li><strong>文案配置</strong>: 设置弹幕显示的模板格式</li>
-<li>
-<p><strong>使用场景</strong>: 统一格式化直播间内的弹幕显示样式</p>
+<li><strong>使用场景</strong>: 统一格式化直播间内的弹幕显示样式</li>
+</ul>
 </li>
 <li>
 <p><strong>LLM回复模板功能</strong></p>
-</li>
+<ul>
 <li><strong>功能开关</strong>: 单独控制LLM回复模板功能的启用/禁用</li>
 <li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
 <li><strong>文案配置</strong>: 设置AI回复的模板格式</li>
 <li><strong>使用场景</strong>: 统一格式化AI的回复内容</li>
 <li><strong>注意</strong>: 在流式响应模式下此功能无效</li>
+</ul>
+</li>
 </ol>
 <h4 id="_24">文案编写规则</h4>
 <ol>
-<li><strong>基础规则</strong></li>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
 <li>支持多行配置,每行一条文案</li>
 <li>系统会从配置的文案中随机选择一条</li>
-<li>
-<p>所有文案用完后会自动重新开始</p>
+<li>所有文案用完后会自动重新开始</li>
+</ul>
 </li>
 <li>
 <p><strong>动态变量</strong>
-   支持以下变量替换:</p>
-</li>
+      支持以下变量替换:</p>
+<ul>
 <li><code>{username}</code>: 发送消息的用户名</li>
 <li><code>{comment}</code>: 用户发送的弹幕内容(念弹幕功能专用)</li>
-<li>
-<p><code>{content}</code>: AI的回复内容(LLM回复模板专用)</p>
+<li><code>{content}</code>: AI的回复内容(LLM回复模板专用)</li>
+</ul>
 </li>
 <li>
 <p><strong>随机语法</strong>
-   支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
-</li>
-</ol>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
 <p>示例:
-   <div class="highlight"><pre><span></span><code>念弹幕: [听说|看到]{username}说:{comment}
+  <div class="highlight"><pre><span></span><code>念弹幕: [听说|看到]{username}说:{comment}
 弹幕模板: {username}[悄悄地|开心地]说:{comment}
 LLM回复: [让我想想|我觉得]{content}
 </code></pre></div></p>
+</li>
+</ol>
 <h4 id="_25">使用场景</h4>
 <ol>
-<li><strong>统一展示风格</strong></li>
+<li>
+<p><strong>统一展示风格</strong></p>
+<ul>
 <li>保持直播间消息格式统一</li>
 <li>提升观看体验</li>
-<li>
-<p>突出重要信息</p>
+<li>突出重要信息</li>
+</ul>
 </li>
 <li>
 <p><strong>增强互动效果</strong></p>
-</li>
+<ul>
 <li>通过随机语法增加变化</li>
 <li>避免机械化的回复</li>
-<li>
-<p>提升互动的趣味性</p>
+<li>提升互动的趣味性</li>
+</ul>
 </li>
 <li>
 <p><strong>品牌个性化</strong></p>
-</li>
+<ul>
 <li>定制符合个人风格的模板</li>
 <li>打造独特的直播间氛围</li>
 <li>增强品牌识别度</li>
+</ul>
+</li>
 </ol>
 <h4 id="_26">使用建议</h4>
 <ol>
-<li><strong>模板设计</strong></li>
+<li>
+<p><strong>模板设计</strong></p>
+<ul>
 <li>设计简洁清晰的模板</li>
 <li>保持风格统一</li>
 <li>突出重要信息</li>
-<li>
-<p>避免过于复杂的格式</p>
+<li>避免过于复杂的格式</li>
+</ul>
 </li>
 <li>
 <p><strong>文案编写</strong></p>
-</li>
+<ul>
 <li>准备充足的随机文案</li>
 <li>合理使用随机语法</li>
 <li>保持语气自然友好</li>
-<li>
-<p>注意礼貌用语</p>
+<li>注意礼貌用语</li>
+</ul>
 </li>
 <li>
 <p><strong>长度控制</strong></p>
-</li>
+<ul>
 <li>合理设置用户名长度限制</li>
 <li>避免过长的模板格式</li>
-<li>
-<p>保持信息的简洁性</p>
+<li>保持信息的简洁性</li>
+</ul>
 </li>
 <li>
 <p><strong>运行维护</strong></p>
-</li>
+<ul>
 <li>定期更新文案内容</li>
 <li>检查模板效果</li>
 <li>收集用户反馈</li>
-<li>
-<p>及时调整配置</p>
+<li>及时调整配置</li>
+</ul>
 </li>
 <li>
 <p><strong>注意事项</strong></p>
-</li>
+<ul>
 <li>不同功能使用对应的变量</li>
 <li>注意流式响应模式的限制</li>
 <li>避免模板之间的冲突</li>
 <li>定期检查模板运行效果</li>
+</ul>
+</li>
 </ol>
 <h3 id="5">5. 答谢功能</h3>
 <p>答谢功能是一个自动感谢系统,用于对观众的互动行为进行及时回应,增强直播间的互动氛围。</p>
@@ -2425,22 +2499,22 @@ LLM回复: [让我想想|我觉得]{content}
 </ul>
 <h4 id="_28">支持的答谢类型</h4>
 <ol>
-<li><strong>入场答谢</strong></li>
+<li>
+<p><strong>入场答谢</strong></p>
+<ul>
 <li>功能开关: 单独控制入场答谢的启用/禁用</li>
 <li>选取模式: 随机/顺序选取文案</li>
 <li>触发时机: 用户进入直播间时</li>
-<li>
-<p>动态变量: <code>{username}</code> 用于替换用户名</p>
+<li>动态变量: <code>{username}</code> 用于替换用户名</li>
+</ul>
 </li>
 <li>
 <p><strong>礼物答谢</strong></p>
-</li>
+<ul>
 <li>功能开关: 单独控制礼物答谢的启用/禁用</li>
 <li>选取模式: 随机/顺序选取文案</li>
 <li>触发条件: 礼物价值达到设定的最低答谢价格</li>
-<li>
-<p>动态变量: </p>
-<ul>
+<li>动态变量: <ul>
 <li><code>{username}</code>: 赠送礼物的用户名</li>
 <li><code>{gift_name}</code>: 礼物名称</li>
 <li><code>{unit_price}</code>: 礼物单价</li>
@@ -2448,93 +2522,107 @@ LLM回复: [让我想想|我觉得]{content}
 <li><code>{gift_num}</code>: 礼物数量</li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>关注答谢</strong></p>
-</li>
+<ul>
 <li>功能开关: 单独控制关注答谢的启用/禁用</li>
 <li>选取模式: 随机/顺序选取文案</li>
 <li>触发时机: 用户关注主播时</li>
 <li>动态变量: <code>{username}</code> 用于替换用户名</li>
+</ul>
+</li>
 </ol>
 <h4 id="_29">文案编写规则</h4>
 <ol>
-<li><strong>基础规则</strong></li>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
 <li>支持多条文案,每行一条</li>
 <li>随机模式: 从所有文案中随机选择</li>
 <li>顺序模式: 按顺序循环使用文案</li>
-<li>
-<p>文案用完后会自动重新开始</p>
+<li>文案用完后会自动重新开始</li>
+</ul>
 </li>
 <li>
 <p><strong>动态变量</strong>
-   每种答谢类型支持不同的动态变量,使用<code>{变量名}</code>格式</p>
+      每种答谢类型支持不同的动态变量,使用<code>{变量名}</code>格式</p>
 </li>
 <li>
 <p><strong>随机语法</strong>
-   支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
-</li>
-</ol>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
 <p>示例:
-   <div class="highlight"><pre><span></span><code>感谢[可爱的|善良的|热情的]{username}[进入直播间|来到直播间]~
+  <div class="highlight"><pre><span></span><code>感谢[可爱的|善良的|热情的]{username}[进入直播间|来到直播间]~
 感谢{username}赠送的{gift_num}个{gift_name},[太棒了|好开心|非常感谢]!
 [欢迎|感谢]{username}[关注|订阅]主播,[一起来玩吧|请多关照]~
 </code></pre></div></p>
+</li>
+</ol>
 <h4 id="_30">使用场景</h4>
 <ol>
-<li><strong>提升互动体验</strong></li>
+<li>
+<p><strong>提升互动体验</strong></p>
+<ul>
 <li>及时回应用户行为</li>
 <li>增强用户参与感</li>
-<li>
-<p>营造温馨的直播氛围</p>
+<li>营造温馨的直播氛围</li>
+</ul>
 </li>
 <li>
 <p><strong>礼物激励</strong></p>
-</li>
+<ul>
 <li>及时感谢打赏用户</li>
 <li>设置合理的最低答谢门槛</li>
-<li>
-<p>鼓励用户互动打赏</p>
+<li>鼓励用户互动打赏</li>
+</ul>
 </li>
 <li>
 <p><strong>粉丝维护</strong></p>
-</li>
+<ul>
 <li>对新关注用户表示感谢</li>
 <li>增加用户归属感</li>
 <li>提高粉丝留存率</li>
+</ul>
+</li>
 </ol>
 <h4 id="_31">使用建议</h4>
 <ol>
-<li><strong>开关管理</strong></li>
+<li>
+<p><strong>开关管理</strong></p>
+<ul>
 <li>根据直播需求灵活开启/关闭各类答谢</li>
 <li>避免过多答谢影响直播节奏</li>
-<li>
-<p>合理使用随机/顺序模式</p>
+<li>合理使用随机/顺序模式</li>
+</ul>
 </li>
 <li>
 <p><strong>文案编写</strong></p>
-</li>
+<ul>
 <li>准备充足的文案内容</li>
 <li>善用随机语法增加变化</li>
 <li>保持文案风格统一</li>
 <li>注意礼貌用语</li>
-<li>
-<p>避免过于机械的表达</p>
+<li>避免过于机械的表达</li>
+</ul>
 </li>
 <li>
 <p><strong>礼物答谢设置</strong></p>
-</li>
+<ul>
 <li>合理设置最低答谢价格</li>
 <li>可以针对不同价值礼物准备不同档次文案</li>
-<li>
-<p>高价值礼物建议使用更热情的答谢方式</p>
+<li>高价值礼物建议使用更热情的答谢方式</li>
+</ul>
 </li>
 <li>
 <p><strong>运行维护</strong></p>
-</li>
+<ul>
 <li>定期更新文案内容</li>
 <li>观察答谢效果</li>
 <li>及时调整配置</li>
 <li>注意避免重复答谢</li>
+</ul>
+</li>
 </ol>
 <h3 id="6">6. 闲时任务</h3>
 <p>闲时任务用于在直播间互动较少时维持活跃度,可以自动发送预设的话术内容。</p>
@@ -2546,7 +2634,9 @@ LLM回复: [让我想想|我觉得]{content}
 <h4 id="_33">运行机制</h4>
 <p>支持三种运行机制:</p>
 <ol>
-<li><strong>直播间无消息更新闲时</strong></li>
+<li>
+<p><strong>直播间无消息更新闲时</strong>  </p>
+<ul>
 <li>根据设定的时间范围触发任务</li>
 <li>可以设置哪些类型的消息会刷新计时:<ul>
 <li>弹幕消息</li>
@@ -2555,29 +2645,29 @@ LLM回复: [让我想想|我觉得]{content}
 <li>关注消息</li>
 </ul>
 </li>
-<li>
-<p>配置项:</p>
-<ul>
+<li>配置项:<ul>
 <li>最小闲时时间: 两次触发的最短间隔(秒)</li>
 <li>最大闲时时间: 两次触发的最长间隔(秒)</li>
 <li>闲时计时减小到: 收到消息时重置的时间值</li>
 <li>刷新计时的消息类型: 勾选需要响应的消息类型</li>
 </ul>
 </li>
-<li>
-<p><strong>待合成消息队列更新闲时</strong></p>
-</li>
-<li>监控待合成消息队列的长度</li>
-<li>当队列长度小于设定值时触发任务</li>
-<li>
-<p>配置项:</p>
-<ul>
-<li>待合成消息队列个数小于此值时触发: 触发任务的队列长度阈值</li>
 </ul>
 </li>
 <li>
-<p><strong>待播放音频队列更新闲时</strong></p>
+<p><strong>待合成消息队列更新闲时</strong>  </p>
+<ul>
+<li>监控待合成消息队列的长度</li>
+<li>当队列长度小于设定值时触发任务</li>
+<li>配置项:<ul>
+<li>待合成消息队列个数小于此值时触发: 触发任务的队列长度阈值</li>
+</ul>
 </li>
+</ul>
+</li>
+<li>
+<p><strong>待播放音频队列更新闲时</strong>  </p>
+<ul>
 <li>监控待播放音频队列的长度</li>
 <li>当队列长度小于设定值时触发任务</li>
 <li>配置项:<ul>
@@ -2585,14 +2675,16 @@ LLM回复: [让我想想|我觉得]{content}
 </ul>
 </li>
 <li>注意: 此机制需要配合定制版LiveTalking才能生效</li>
+</ul>
+</li>
 </ol>
 <h4 id="_34">触发内容配置</h4>
 <ol>
-<li><strong>文案模式</strong></li>
-<li>开关控制: 可单独启用/禁用文案模式</li>
 <li>
-<p>文案组管理:</p>
+<p><strong>文案模式</strong></p>
 <ul>
+<li>开关控制: 可单独启用/禁用文案模式</li>
+<li>文案组管理:<ul>
 <li>支持创建多个文案组</li>
 <li>每个组可以设置:</li>
 <li>组名称: 方便管理和识别</li>
@@ -2601,92 +2693,106 @@ LLM回复: [让我想想|我觉得]{content}
 <li>文案内容: 每行一条</li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
 <p><strong>弹幕触发LLM模式</strong></p>
-</li>
+<ul>
 <li>开关控制: 可单独启用/禁用弹幕模式</li>
 <li>提取方式: 随机/固定顺序</li>
 <li>弹幕列表: 配置预设的弹幕内容(每行一条)</li>
+</ul>
+</li>
 </ol>
 <h4 id="_35">文案编写规则</h4>
 <ol>
-<li><strong>基础规则</strong></li>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
 <li>支持多条文案,每行一条</li>
 <li>系统会根据设置随机或顺序发送</li>
-<li>
-<p>文案组用完后会自动重新开始</p>
+<li>文案组用完后会自动重新开始</li>
+</ul>
 </li>
 <li>
 <p><strong>动态变量</strong>
-   文案中可以使用以下变量:</p>
-</li>
+      文案中可以使用以下变量:</p>
+<ul>
 <li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
 <li><code>{last_username}</code>: 最后发言的用户名</li>
-<li>
-<p><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</p>
+<li><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</li>
+</ul>
 </li>
 <li>
 <p><strong>随机语法</strong>
-   支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
-</li>
-</ol>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
 <p>示例:
-   <div class="highlight"><pre><span></span><code>现在是{time},[好安静|好冷清]呀~
+  <div class="highlight"><pre><span></span><code>现在是{time},[好安静|好冷清]呀~
 [有人在吗|还有人在看直播吗]?
 </code></pre></div></p>
+</li>
+</ol>
 <h4 id="_36">使用场景</h4>
 <ol>
-<li><strong>维持直播间活跃</strong></li>
-<li>在直播间互动较少时自动发送话术</li>
 <li>
-<p>避免直播间过于安静</p>
+<p><strong>维持直播间活跃</strong></p>
+<ul>
+<li>在直播间互动较少时自动发送话术</li>
+<li>避免直播间过于安静</li>
+</ul>
 </li>
 <li>
 <p><strong>商品推广</strong></p>
-</li>
+<ul>
 <li>定期发送商品介绍</li>
 <li>保持商品曝光度</li>
-<li>
-<p>可以设置多个商品话术轮换</p>
+<li>可以设置多个商品话术轮换</li>
+</ul>
 </li>
 <li>
 <p><strong>互动引导</strong></p>
-</li>
+<ul>
 <li>引导观众互动</li>
 <li>活跃直播间氛围</li>
 <li>增加用户粘性</li>
+</ul>
+</li>
 </ol>
 <h4 id="_37">使用建议</h4>
 <ol>
-<li><strong>机制选择</strong></li>
+<li>
+<p><strong>机制选择</strong></p>
+<ul>
 <li>根据实际需求选择合适的运行机制</li>
 <li>新手建议使用"直播间无消息更新闲时"</li>
-<li>
-<p>合理设置触发阈值,避免过于频繁</p>
+<li>合理设置触发阈值,避免过于频繁</li>
+</ul>
 </li>
 <li>
 <p><strong>时间设置</strong></p>
-</li>
+<ul>
 <li>最小间隔建议不低于5秒</li>
 <li>最大间隔建议不超过300秒</li>
-<li>
-<p>根据直播间实际情况调整（如果拿闲时任务做主要话术来播放，那不建议通过时间来限制任务触发，而是改用队列长度来限制）</p>
+<li>根据直播间实际情况调整（如果拿闲时任务做主要话术来播放，那不建议通过时间来限制任务触发，而是改用队列长度来限制）</li>
+</ul>
 </li>
 <li>
 <p><strong>内容编排</strong></p>
-</li>
+<ul>
 <li>准备充足的文案内容</li>
 <li>合理分组和排序</li>
 <li>适当使用随机语法增加变化</li>
-<li>
-<p>内容要自然,避免机械感</p>
+<li>内容要自然,避免机械感</li>
+</ul>
 </li>
 <li>
 <p><strong>运行维护</strong></p>
-</li>
+<ul>
 <li>定期检查任务运行状态</li>
 <li>及时更新文案内容</li>
 <li>观察效果及时调整配置</li>
+</ul>
+</li>
 </ol>
 <h3 id="7">7. 定时任务</h3>
 <p>定时任务用于按照预设规则自动发送话术,让直播间保持活跃度。</p>
@@ -2709,75 +2815,85 @@ LLM回复: [让我想想|我觉得]{content}
 - <strong>文案内容</strong>: 要发送的话术内容</p>
 <h4 id="_41">文案编写规则</h4>
 <ol>
-<li><strong>基础规则</strong></li>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
 <li>支持多条文案,每行一条</li>
 <li>系统会随机抽取一条发送</li>
 <li>已发送的文案会被临时移除,避免重复</li>
-<li>
-<p>所有文案发送完后会重新开始</p>
+<li>所有文案发送完后会重新开始</li>
+</ul>
 </li>
 <li>
 <p><strong>动态变量</strong>
-   文案中可以使用以下变量:</p>
-</li>
+      文案中可以使用以下变量:</p>
+<ul>
 <li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
 <li><code>{last_username}</code>: 最后发言的用户名</li>
-<li>
-<p><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</p>
+<li><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</li>
+</ul>
 </li>
 <li>
 <p><strong>随机语法</strong>
-   支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
-</li>
-</ol>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
 <p>示例:
-   <div class="highlight"><pre><span></span><code>欢迎来到[小主播|主播]的直播间~
+  <div class="highlight"><pre><span></span><code>欢迎来到[小主播|主播]的直播间~
 今天[好热|好冷|天气真好]呀
 </code></pre></div></p>
+</li>
+</ol>
 <h4 id="_42">使用场景</h4>
 <ol>
-<li><strong>维持直播间活跃</strong></li>
-<li>在直播间互动较少时自动发送话术</li>
 <li>
-<p>保持直播间的活跃氛围</p>
+<p><strong>维持直播间活跃</strong></p>
+<ul>
+<li>在直播间互动较少时自动发送话术</li>
+<li>保持直播间的活跃氛围</li>
+</ul>
 </li>
 <li>
 <p><strong>商品推广</strong></p>
-</li>
+<ul>
 <li>定期发送商品介绍</li>
 <li>保持商品曝光度</li>
-<li>
-<p>可以设置多个不同文案轮换发送</p>
+<li>可以设置多个不同文案轮换发送</li>
+</ul>
 </li>
 <li>
 <p><strong>规则提醒</strong></p>
-</li>
+<ul>
 <li>定时发送直播间规则</li>
 <li>友好提醒观众遵守规范</li>
 <li>维护直播间秩序</li>
+</ul>
+</li>
 </ol>
 <h4 id="_43">使用建议</h4>
 <ol>
-<li><strong>时间设置</strong></li>
+<li>
+<p><strong>时间设置</strong></p>
+<ul>
 <li>建议最小间隔不要低于60秒</li>
 <li>最大间隔建议不超过300秒</li>
-<li>
-<p>根据直播间实际情况调整</p>
+<li>根据直播间实际情况调整</li>
+</ul>
 </li>
 <li>
 <p><strong>文案编写</strong></p>
-</li>
+<ul>
 <li>准备多条不同内容的文案</li>
 <li>善用随机语法增加变化</li>
-<li>
-<p>内容要自然,避免机械感</p>
+<li>内容要自然,避免机械感</li>
+</ul>
 </li>
 <li>
 <p><strong>运行维护</strong></p>
-</li>
+<ul>
 <li>定期检查任务运行状态</li>
 <li>及时更新文案内容</li>
 <li>根据效果调整触发时间</li>
+</ul>
+</li>
 </ol>
 <h3 id="8">8. 本地问答</h3>
 <p>本地问答系统用于自动回复用户的问题,通过关键词匹配来触发预设的回答内容。</p>
@@ -2802,121 +2918,139 @@ LLM回复: [让我想想|我觉得]{content}
 - <strong>回答内容</strong>: 匹配成功后发送的回答内容</p>
 <h4 id="_47">文案编写规则</h4>
 <ol>
-<li><strong>基础规则</strong></li>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
 <li>支持多条回答文案,每行一条</li>
 <li>系统会随机抽取一条发送</li>
 <li>支持多个关键词,每行一个</li>
-<li>
-<p>任一关键词匹配达到相似度要求即可触发</p>
+<li>任一关键词匹配达到相似度要求即可触发</li>
+</ul>
 </li>
 <li>
 <p><strong>动态变量</strong>
-   回答内容中可以使用以下变量:</p>
-</li>
+      回答内容中可以使用以下变量:</p>
+<ul>
 <li><code>{username}</code>: 提问用户的用户名</li>
-<li>
-<p><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</p>
+<li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
+</ul>
 </li>
 <li>
 <p><strong>随机语法</strong>
-   支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
-</li>
-</ol>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
 <p>示例:
-   <div class="highlight"><pre><span></span><code>感谢[亲爱的|可爱的]{username}提问~
+  <div class="highlight"><pre><span></span><code>感谢[亲爱的|可爱的]{username}提问~
 现在是{time},我来为您解答[这个|这样的]问题
 </code></pre></div></p>
+</li>
+</ol>
 <h4 id="_48">使用场景</h4>
 <ol>
-<li><strong>常见问题解答</strong></li>
+<li>
+<p><strong>常见问题解答</strong></p>
+<ul>
 <li>设置常见问题的关键词和答案</li>
 <li>自动回复重复性问题</li>
-<li>
-<p>减轻人工回答压力</p>
+<li>减轻人工回答压力</li>
+</ul>
 </li>
 <li>
 <p><strong>直播间引导</strong></p>
-</li>
+<ul>
 <li>回答直播间规则相关问题</li>
 <li>解答商品相关咨询</li>
-<li>
-<p>活动玩法说明</p>
+<li>活动玩法说明</li>
+</ul>
 </li>
 <li>
 <p><strong>互动增强</strong></p>
-</li>
+<ul>
 <li>设置趣味性的问答</li>
 <li>增加直播间的互动性</li>
 <li>活跃直播间氛围</li>
+</ul>
+</li>
 </ol>
 <h4 id="_49">使用建议</h4>
 <ol>
-<li><strong>关键词设置</strong></li>
+<li>
+<p><strong>关键词设置</strong></p>
+<ul>
 <li>设置多个相近的关键词形式</li>
 <li>考虑用户可能的不同表达方式</li>
-<li>
-<p>适当调整最低匹配度阈值</p>
+<li>适当调整最低匹配度阈值</li>
+</ul>
 </li>
 <li>
 <p><strong>回答编写</strong></p>
-</li>
+<ul>
 <li>准备多个不同的回答版本</li>
 <li>使用随机语法增加变化</li>
-<li>
-<p>回答要自然友好,避免机械感</p>
+<li>回答要自然友好,避免机械感</li>
+</ul>
 </li>
 <li>
 <p><strong>运行维护</strong></p>
-</li>
+<ul>
 <li>定期检查匹配效果</li>
 <li>及时更新问答内容</li>
 <li>根据实际效果调整配置</li>
+</ul>
+</li>
 </ol>
 <h2 id="_50">最佳实践</h2>
 <ol>
-<li>配置管理</li>
+<li>
+<p>配置管理</p>
+<ul>
 <li>定期备份配置</li>
 <li>使用模板快速部署</li>
-<li>
-<p>及时更新配置</p>
+<li>及时更新配置</li>
+</ul>
 </li>
 <li>
 <p>性能优化</p>
-</li>
+<ul>
 <li>合理设置优先级</li>
 <li>适当的过滤规则</li>
-<li>
-<p>控制任务频率</p>
+<li>控制任务频率</li>
+</ul>
 </li>
 <li>
 <p>内容管理</p>
-</li>
+<ul>
 <li>定期更新违禁词库</li>
 <li>优化回复模板</li>
 <li>维护问答库</li>
+</ul>
+</li>
 </ol>
 <h2 id="_51">常见问题</h2>
 <ol>
-<li>配置不生效</li>
+<li>
+<p>配置不生效</p>
+<ul>
 <li>检查配置格式</li>
 <li>确认保存成功</li>
-<li>
-<p>可能需要重启服务</p>
+<li>可能需要重启服务</li>
+</ul>
 </li>
 <li>
 <p>任务执行异常</p>
-</li>
+<ul>
 <li>查看错误日志</li>
 <li>检查触发条件</li>
-<li>
-<p>验证配置正确性</p>
+<li>验证配置正确性</li>
+</ul>
 </li>
 <li>
 <p>性能问题</p>
-</li>
+<ul>
 <li>优化过滤规则</li>
 <li>调整任务频率</li>
 <li>清理历史数据</li>
+</ul>
+</li>
 </ol>
 
 
