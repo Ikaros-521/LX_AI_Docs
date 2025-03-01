@@ -1,0 +1,3120 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../install/">
+      
+      
+        <link rel="next" href="../platform/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>基础功能 - LX AI Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-FR32RDV2MT"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-FR32RDV2MT",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-FR32RDV2MT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="LX AI Docs" class="md-header__button md-logo" aria-label="LX AI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LX AI Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              基础功能
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Ikaros-521/LX_AI" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    洛曦AI
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../install/" class="md-tabs__link">
+        
+  
+    
+  
+  安装
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  使用&功能讲解
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+    
+  
+  更新日志
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LX AI Docs" class="md-nav__button md-logo" aria-label="LX AI Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    LX AI Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Ikaros-521/LX_AI" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    洛曦AI
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    使用&功能讲解
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            使用&功能讲解
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    基础功能
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    基础功能
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      统一配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="统一配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置项说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置列表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      功能管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="功能管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 消息优先级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 消息优先级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      支持的消息类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先级设置建议
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 消息过滤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 消息过滤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      过滤机制说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 违禁词设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 违禁词设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      违禁词管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理机制说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 弹幕&amp;回复模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 弹幕&回复模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      功能模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 答谢功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 答谢功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      支持的答谢类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 闲时任务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 闲时任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      运行机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      触发内容配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 定时任务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 定时任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      任务管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      任务配置项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 本地问答
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 本地问答">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      问答管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置项说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      最佳实践
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大语言模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    文本转语音
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual_body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    虚拟身体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    更新日志
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      统一配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="统一配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置项说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="配置管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置列表
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      功能管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="功能管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 消息优先级
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 消息优先级">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本原则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      支持的消息类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先级设置建议
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 消息过滤
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 消息过滤">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      过滤机制说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 违禁词设置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 违禁词设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      违禁词管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理机制说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 弹幕&amp;回复模板
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 弹幕&回复模板">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      功能模块
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 答谢功能
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 答谢功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      支持的答谢类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 闲时任务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 闲时任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      运行机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      触发内容配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 定时任务
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 定时任务">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      任务管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      任务配置项
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_42" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 本地问答
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. 本地问答">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_44" class="md-nav__link">
+    <span class="md-ellipsis">
+      基础设置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_45" class="md-nav__link">
+    <span class="md-ellipsis">
+      问答管理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" class="md-nav__link">
+    <span class="md-ellipsis">
+      配置项说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" class="md-nav__link">
+    <span class="md-ellipsis">
+      文案编写规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用场景
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用建议
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" class="md-nav__link">
+    <span class="md-ellipsis">
+      最佳实践
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_51" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见问题
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="_1">基础功能</h1>
+<h2 id="_2">统一配置</h2>
+<p>统一配置是系统的全局设置，用于管理系统级别的参数和选项。</p>
+<h3 id="_3">配置项说明</h3>
+<ul>
+<li>
+<p><strong>系统设置</strong></p>
+<ul>
+<li>系统名称：显示在界面标题和日志中的系统名称</li>
+<li>调试模式：是否启用调试日志</li>
+<li>日志级别：系统日志的详细程度</li>
+</ul>
+</li>
+<li>
+<p><strong>任务配置</strong></p>
+<ul>
+<li>任务队列大小：系统可以同时处理的最大任务数</li>
+<li>任务超时时间：单个任务的最大执行时间</li>
+<li>重试策略：任务失败后的重试机制</li>
+</ul>
+</li>
+</ul>
+<h3 id="_4">使用说明</h3>
+<ol>
+<li>访问统一配置页面</li>
+<li>修改相关参数</li>
+<li>保存配置（部分配置可能需要重启服务生效）</li>
+</ol>
+<h2 id="_5">配置管理</h2>
+<p>配置管理用于管理不同场景下的配置组合，支持多配置切换和导入导出。</p>
+<h3 id="_6">配置列表</h3>
+<p>在配置列表中，您可以：</p>
+<ol>
+<li>
+<p>创建新配置</p>
+<ul>
+<li>点击"新建配置"按钮</li>
+<li>填写配置名称和说明</li>
+<li>选择平台和功能模块</li>
+<li>设置具体参数</li>
+</ul>
+</li>
+<li>
+<p>管理现有配置</p>
+<ul>
+<li>编辑：修改配置内容</li>
+<li>删除：移除不需要的配置</li>
+</ul>
+</li>
+</ol>
+<h2 id="_7">功能管理</h2>
+<h3 id="1">1. 消息优先级</h3>
+<p>消息优先级功能用于管理不同类型消息的处理顺序,通过设置优先级数值来控制消息的播放顺序。</p>
+<h4 id="_8">基本原则</h4>
+<ul>
+<li>优先级使用正整数表示</li>
+<li>数字越大优先级越高,越早播放</li>
+<li>相同优先级的消息按接收顺序播放</li>
+</ul>
+<h4 id="_9">支持的消息类型</h4>
+<ol>
+<li>
+<p><strong>互动消息</strong></p>
+<ul>
+<li>弹幕回复: 对用户弹幕的回复</li>
+<li>LLM回复: AI大语言模型的回复</li>
+<li>念弹幕: 直接朗读用户的弹幕内容</li>
+</ul>
+</li>
+<li>
+<p><strong>答谢消息</strong></p>
+<ul>
+<li>入场答谢: 感谢用户进入直播间</li>
+<li>礼物答谢: 感谢用户赠送礼物</li>
+<li>关注答谢: 感谢用户关注主播</li>
+</ul>
+</li>
+<li>
+<p><strong>任务消息</strong></p>
+<ul>
+<li>复读-文案: 复读功能发送的文案</li>
+<li>闲时任务-文案: 闲时任务发送的文案</li>
+<li>定时任务-文案: 定时任务发送的文案</li>
+<li>本地问答-文案: 本地问答功能的回复文案</li>
+</ul>
+</li>
+</ol>
+<h4 id="_10">优先级设置建议</h4>
+<ol>
+<li>
+<p><strong>高优先级消息</strong> (建议20-30)</p>
+<ul>
+<li>礼物答谢</li>
+<li>LLM回复</li>
+<li>本地问答-文案</li>
+<li>复读-文案</li>
+</ul>
+</li>
+<li>
+<p><strong>中优先级消息</strong> (建议10-19)</p>
+<ul>
+<li>弹幕回复</li>
+<li>关注答谢</li>
+<li>入场答谢</li>
+<li>念弹幕</li>
+</ul>
+</li>
+<li>
+<p><strong>低优先级消息</strong> (建议1-9)</p>
+<ul>
+<li>闲时任务-文案</li>
+<li>定时任务-文案</li>
+</ul>
+</li>
+</ol>
+<h4 id="_11">使用场景</h4>
+<ol>
+<li>
+<p><strong>礼物互动优先</strong></p>
+<ul>
+<li>将礼物答谢设为最高优先级</li>
+<li>确保及时感谢打赏用户</li>
+<li>提升用户打赏积极性</li>
+</ul>
+</li>
+<li>
+<p><strong>对话流畅性</strong></p>
+<ul>
+<li>提高弹幕回复和LLM回复优先级</li>
+<li>保证对话的连贯性</li>
+<li>增强互动的即时性</li>
+</ul>
+</li>
+<li>
+<p><strong>基础任务保障</strong></p>
+<ul>
+<li>降低自动任务的优先级</li>
+<li>避免打断重要互动</li>
+<li>保证基础任务正常执行</li>
+</ul>
+</li>
+</ol>
+<h4 id="_12">使用建议</h4>
+<ol>
+<li>
+<p><strong>优先级分配</strong></p>
+<ul>
+<li>根据直播间实际情况调整优先级</li>
+<li>保持适当的优先级差距</li>
+<li>避免过多消息使用相同优先级</li>
+</ul>
+</li>
+<li>
+<p><strong>数值设置</strong></p>
+<ul>
+<li>建议使用10的倍数设置基准优先级</li>
+<li>预留优先级调整空间</li>
+<li>重要消息类型之间保持10-20的优先级差距</li>
+</ul>
+</li>
+<li>
+<p><strong>动态调整</strong></p>
+<ul>
+<li>观察消息处理效果</li>
+<li>根据直播节奏调整优先级</li>
+<li>特殊活动时可临时调整优先级</li>
+</ul>
+</li>
+<li>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>优先级设置过于集中可能导致消息堆积</li>
+<li>过大的优先级差距可能导致低优先级消息长期得不到处理</li>
+<li>建议定期检查和优化优先级设置</li>
+</ul>
+</li>
+</ol>
+<h3 id="2">2. 消息过滤</h3>
+<p>消息过滤功能用于管理和控制直播间的消息流,通过多种过滤机制来保证消息质量和处理效率。</p>
+<h4 id="_13">基础设置</h4>
+<ol>
+<li>
+<p><strong>触发&amp;过滤前后缀</strong></p>
+<ul>
+<li><strong>弹幕触发前缀</strong>: 必须包含指定前缀才能触发(每行一个)</li>
+<li><strong>弹幕触发后缀</strong>: 必须包含指定后缀才能触发(每行一个)</li>
+<li><strong>弹幕过滤前缀</strong>: 包含指定前缀的消息将被过滤(每行一个)</li>
+<li><strong>弹幕过滤后缀</strong>: 包含指定后缀的消息将被过滤(每行一个)</li>
+<li><strong>LLM触发前缀</strong>: 触发大语言模型回复的前缀(每行一个)</li>
+<li><strong>LLM触发后缀</strong>: 触发大语言模型回复的后缀(每行一个)</li>
+</ul>
+</li>
+<li>
+<p><strong>消息长度限制</strong></p>
+<ul>
+<li><strong>最大单词数</strong>: 限制大语言模型回复的最大单词数</li>
+<li><strong>最大字符数</strong>: 限制大语言模型回复的最大字符数</li>
+<li>注意: 流式输出模式下不会进行限制</li>
+</ul>
+</li>
+<li>
+<p><strong>数据转换与特殊内容处理</strong></p>
+<ul>
+<li><strong>音频合成前的文本切分</strong>: 将长文本按标点符号切分成短句</li>
+<li><strong>用户名中的数字转中文</strong>: 将用户名中的数字转换为中文读音</li>
+<li><strong>弹幕表情过滤</strong>: 过滤掉弹幕中的表情符号</li>
+</ul>
+</li>
+<li>
+<p><strong>消息遗忘&amp;保留设置</strong>
+      支持以下消息类型的遗忘间隔和保留数量设置:</p>
+<ul>
+<li>弹幕消息</li>
+<li>礼物消息</li>
+<li>入场消息</li>
+<li>关注消息</li>
+<li>聊天消息</li>
+<li>定时任务</li>
+<li>点赞消息</li>
+<li>闲时任务</li>
+<li>图像识别(暂无)</li>
+</ul>
+</li>
+<li>
+<p><strong>弹幕黑名单</strong></p>
+<ul>
+<li>黑名单开关: 控制是否启用黑名单功能</li>
+<li>黑名单用户列表: 配置需要过滤的用户名(每行一个)</li>
+</ul>
+</li>
+</ol>
+<h4 id="_14">过滤机制说明</h4>
+<ol>
+<li>
+<p><strong>前后缀过滤</strong></p>
+<ul>
+<li>触发前缀示例: 配置"#"，则"#你好"会被触发</li>
+<li>触发后缀示例: 配置"。"，则"你好。"会被触发</li>
+<li>过滤前缀示例: 配置"@"，则"@你好"会被过滤</li>
+<li>过滤后缀示例: 配置"?"，则"你好?"会被过滤</li>
+</ul>
+</li>
+<li>
+<p><strong>消息遗忘机制</strong></p>
+<ul>
+<li>遗忘间隔: 设置消息在队列中的保留时间(秒)</li>
+<li>保留数量: 设置队列中最多保留的消息数量</li>
+<li>超过间隔或数量的消息将被自动清理</li>
+</ul>
+</li>
+<li>
+<p><strong>黑名单机制</strong></p>
+<ul>
+<li>完全匹配: 用户名需要完全匹配才会被过滤</li>
+</ul>
+</li>
+</ol>
+<h4 id="_15">使用场景</h4>
+<ol>
+<li>
+<p><strong>直播互动优化</strong></p>
+<ul>
+<li>过滤无效弹幕</li>
+<li>控制互动频率</li>
+<li>维护直播间秩序</li>
+</ul>
+</li>
+<li>
+<p><strong>性能优化</strong></p>
+<ul>
+<li>控制消息队列大小</li>
+<li>避免消息堆积</li>
+<li>优化处理效率</li>
+</ul>
+</li>
+<li>
+<p><strong>内容管理</strong></p>
+<ul>
+<li>过滤不当内容</li>
+<li>屏蔽特定用户</li>
+<li>控制互动质量</li>
+</ul>
+</li>
+</ol>
+<h4 id="_16">使用建议</h4>
+<ol>
+<li>
+<p><strong>前后缀设置</strong></p>
+<ul>
+<li>根据直播需求设置合适的触发条件</li>
+<li>避免过于严格的过滤规则</li>
+<li>定期更新过滤规则</li>
+</ul>
+</li>
+<li>
+<p><strong>遗忘参数配置</strong></p>
+<ul>
+<li>根据直播间活跃度调整遗忘间隔</li>
+<li>合理设置保留数量</li>
+<li>不同类型消息可以设置不同参数</li>
+</ul>
+</li>
+<li>
+<p><strong>黑名单管理</strong></p>
+<ul>
+<li>及时更新黑名单列表</li>
+<li>记录违规用户信息</li>
+<li>定期清理过期记录</li>
+</ul>
+</li>
+<li>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>过滤规则不要过于复杂</li>
+<li>定期检查过滤效果</li>
+<li>及时调整配置参数</li>
+<li>保持黑名单的时效性</li>
+</ul>
+</li>
+</ol>
+<h3 id="3">3. 违禁词设置</h3>
+<p>违禁词功能用于自动过滤和处理直播间中的不当内容,通过配置违禁词库和处理机制来维护直播间的良好环境。</p>
+<h4 id="_17">基础设置</h4>
+<ol>
+<li>
+<p><strong>违禁词处理机制</strong></p>
+<ul>
+<li><strong>违禁词替换</strong>: 将违禁词替换为指定的文本内容</li>
+<li><strong>违禁语句丢弃</strong>: 含有违禁词的整句话将被丢弃</li>
+<li><strong>不处理违禁词</strong>: 关闭违禁词处理功能</li>
+</ul>
+</li>
+<li>
+<p><strong>替换内容</strong></p>
+<ul>
+<li>在选择"违禁词替换"机制时使用</li>
+<li>设置将违禁词替换成的文本内容</li>
+<li>为空时将直接删除违禁词</li>
+</ul>
+</li>
+</ol>
+<h4 id="_18">违禁词管理</h4>
+<ol>
+<li>
+<p><strong>添加违禁词</strong></p>
+<ul>
+<li>单个添加: 手动输入违禁词</li>
+<li>批量导入: 支持批量导入违禁词列表</li>
+<li>记录信息: 自动记录添加时间和操作用户</li>
+</ul>
+</li>
+<li>
+<p><strong>删除操作</strong></p>
+<ul>
+<li>单个删除: 删除指定的违禁词</li>
+<li>批量删除: 删除选中的多个违禁词</li>
+<li>清空操作: 清空所有违禁词(不可恢复)</li>
+</ul>
+</li>
+<li>
+<p><strong>查询功能</strong></p>
+<ul>
+<li>违禁词搜索: 支持关键词搜索</li>
+<li>时间范围: 可按添加时间筛选</li>
+<li>分页显示: 支持自定义每页显示数量</li>
+</ul>
+</li>
+</ol>
+<h4 id="_19">处理机制说明</h4>
+<ol>
+<li>
+<p><strong>违禁词替换模式</strong></p>
+<ul>
+<li>仅替换命中的违禁词部分</li>
+<li>其他内容保持不变</li>
+<li>示例: <ul>
+<li>违禁词: "坏话"</li>
+<li>替换为: "***"</li>
+<li>原文: "这是一句坏话"</li>
+<li>结果: "这是一句***"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>语句丢弃模式</strong></p>
+<ul>
+<li>发现违禁词即丢弃整句</li>
+<li>不进行部分替换</li>
+<li>示例:<ul>
+<li>违禁词: "坏话"</li>
+<li>原文: "这是一句坏话"</li>
+<li>结果: ""(整句被丢弃)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>不处理模式</strong></p>
+<ul>
+<li>仅记录违禁词</li>
+<li>不进行任何处理</li>
+<li>用于数据统计和分析</li>
+</ul>
+</li>
+</ol>
+<h4 id="_20">使用场景</h4>
+<ol>
+<li>
+<p><strong>内容净化</strong></p>
+<ul>
+<li>过滤不文明用语</li>
+<li>屏蔽敏感词汇</li>
+<li>维护直播环境</li>
+</ul>
+</li>
+<li>
+<p><strong>合规管理</strong></p>
+<ul>
+<li>遵守平台规范</li>
+<li>预防违规内容</li>
+<li>降低运营风险</li>
+</ul>
+</li>
+<li>
+<p><strong>数据分析</strong></p>
+<ul>
+<li>统计违禁词出现频率</li>
+<li>分析用户行为</li>
+<li>优化管理策略</li>
+</ul>
+</li>
+</ol>
+<h4 id="_21">使用建议</h4>
+<ol>
+<li>
+<p><strong>词库管理</strong></p>
+<ul>
+<li>及时更新违禁词库</li>
+<li>分类管理不同类型的违禁词</li>
+<li>定期清理过期或无效的违禁词</li>
+</ul>
+</li>
+<li>
+<p><strong>机制选择</strong></p>
+<ul>
+<li>根据直播内容选择合适的处理机制</li>
+<li>避免过于严格影响用户体验</li>
+<li>可针对不同场景切换不同机制</li>
+</ul>
+</li>
+<li>
+<p><strong>效果监控</strong></p>
+<ul>
+<li>定期检查过滤效果</li>
+<li>收集用户反馈</li>
+<li>及时调整处理策略</li>
+</ul>
+</li>
+<li>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>违禁词设置要合理,避免误伤</li>
+<li>定期备份违禁词库</li>
+<li>清空操作需谨慎,不可恢复</li>
+<li>建议保留操作日志</li>
+</ul>
+</li>
+</ol>
+<h3 id="4">4. 弹幕&amp;回复模板</h3>
+<p>弹幕&amp;回复模板功能用于统一管理和格式化各类消息的展示形式,包括念弹幕、弹幕模板和LLM回复模板三个子功能。</p>
+<h4 id="_22">基础设置</h4>
+<ul>
+<li><strong>总开关</strong>: 控制所有弹幕&amp;回复模板功能的启用/禁用状态</li>
+<li>只有开启总开关后,各子功能的配置才会生效</li>
+</ul>
+<h4 id="_23">功能模块</h4>
+<ol>
+<li>
+<p><strong>念弹幕功能</strong></p>
+<ul>
+<li><strong>功能开关</strong>: 单独控制念弹幕功能的启用/禁用</li>
+<li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
+<li><strong>文案配置</strong>: 设置念弹幕时的文案格式</li>
+<li><strong>使用场景</strong>: 将用户弹幕内容以特定格式朗读出来</li>
+</ul>
+</li>
+<li>
+<p><strong>弹幕模板功能</strong></p>
+<ul>
+<li><strong>功能开关</strong>: 单独控制弹幕模板功能的启用/禁用</li>
+<li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
+<li><strong>文案配置</strong>: 设置弹幕显示的模板格式</li>
+<li><strong>使用场景</strong>: 统一格式化直播间内的弹幕显示样式</li>
+</ul>
+</li>
+<li>
+<p><strong>LLM回复模板功能</strong></p>
+<ul>
+<li><strong>功能开关</strong>: 单独控制LLM回复模板功能的启用/禁用</li>
+<li><strong>用户名最大长度</strong>: 限制显示的用户名长度,超过将被截断</li>
+<li><strong>文案配置</strong>: 设置AI回复的模板格式</li>
+<li><strong>使用场景</strong>: 统一格式化AI的回复内容</li>
+<li><strong>注意</strong>: 在流式响应模式下此功能无效</li>
+</ul>
+</li>
+</ol>
+<h4 id="_24">文案编写规则</h4>
+<ol>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
+<li>支持多行配置,每行一条文案</li>
+<li>系统会从配置的文案中随机选择一条</li>
+<li>所有文案用完后会自动重新开始</li>
+</ul>
+</li>
+<li>
+<p><strong>动态变量</strong>
+      支持以下变量替换:</p>
+<ul>
+<li><code>{username}</code>: 发送消息的用户名</li>
+<li><code>{comment}</code>: 用户发送的弹幕内容(念弹幕功能专用)</li>
+<li><code>{content}</code>: AI的回复内容(LLM回复模板专用)</li>
+</ul>
+</li>
+<li>
+<p><strong>随机语法</strong>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
+<p>示例:
+  <div class="highlight"><pre><span></span><code>念弹幕: [听说|看到]{username}说:{comment}
+弹幕模板: {username}[悄悄地|开心地]说:{comment}
+LLM回复: [让我想想|我觉得]{content}
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="_25">使用场景</h4>
+<ol>
+<li>
+<p><strong>统一展示风格</strong></p>
+<ul>
+<li>保持直播间消息格式统一</li>
+<li>提升观看体验</li>
+<li>突出重要信息</li>
+</ul>
+</li>
+<li>
+<p><strong>增强互动效果</strong></p>
+<ul>
+<li>通过随机语法增加变化</li>
+<li>避免机械化的回复</li>
+<li>提升互动的趣味性</li>
+</ul>
+</li>
+<li>
+<p><strong>品牌个性化</strong></p>
+<ul>
+<li>定制符合个人风格的模板</li>
+<li>打造独特的直播间氛围</li>
+<li>增强品牌识别度</li>
+</ul>
+</li>
+</ol>
+<h4 id="_26">使用建议</h4>
+<ol>
+<li>
+<p><strong>模板设计</strong></p>
+<ul>
+<li>设计简洁清晰的模板</li>
+<li>保持风格统一</li>
+<li>突出重要信息</li>
+<li>避免过于复杂的格式</li>
+</ul>
+</li>
+<li>
+<p><strong>文案编写</strong></p>
+<ul>
+<li>准备充足的随机文案</li>
+<li>合理使用随机语法</li>
+<li>保持语气自然友好</li>
+<li>注意礼貌用语</li>
+</ul>
+</li>
+<li>
+<p><strong>长度控制</strong></p>
+<ul>
+<li>合理设置用户名长度限制</li>
+<li>避免过长的模板格式</li>
+<li>保持信息的简洁性</li>
+</ul>
+</li>
+<li>
+<p><strong>运行维护</strong></p>
+<ul>
+<li>定期更新文案内容</li>
+<li>检查模板效果</li>
+<li>收集用户反馈</li>
+<li>及时调整配置</li>
+</ul>
+</li>
+<li>
+<p><strong>注意事项</strong></p>
+<ul>
+<li>不同功能使用对应的变量</li>
+<li>注意流式响应模式的限制</li>
+<li>避免模板之间的冲突</li>
+<li>定期检查模板运行效果</li>
+</ul>
+</li>
+</ol>
+<h3 id="5">5. 答谢功能</h3>
+<p>答谢功能是一个自动感谢系统,用于对观众的互动行为进行及时回应,增强直播间的互动氛围。</p>
+<h4 id="_27">基础设置</h4>
+<ul>
+<li><strong>答谢总开关</strong>: 控制所有答谢功能的启用/禁用状态</li>
+<li>只有开启总开关后,配置的答谢功能才会生效</li>
+</ul>
+<h4 id="_28">支持的答谢类型</h4>
+<ol>
+<li>
+<p><strong>入场答谢</strong></p>
+<ul>
+<li>功能开关: 单独控制入场答谢的启用/禁用</li>
+<li>选取模式: 随机/顺序选取文案</li>
+<li>触发时机: 用户进入直播间时</li>
+<li>动态变量: <code>{username}</code> 用于替换用户名</li>
+</ul>
+</li>
+<li>
+<p><strong>礼物答谢</strong></p>
+<ul>
+<li>功能开关: 单独控制礼物答谢的启用/禁用</li>
+<li>选取模式: 随机/顺序选取文案</li>
+<li>触发条件: 礼物价值达到设定的最低答谢价格</li>
+<li>动态变量: <ul>
+<li><code>{username}</code>: 赠送礼物的用户名</li>
+<li><code>{gift_name}</code>: 礼物名称</li>
+<li><code>{unit_price}</code>: 礼物单价</li>
+<li><code>{total_price}</code>: 礼物总价值</li>
+<li><code>{gift_num}</code>: 礼物数量</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>关注答谢</strong></p>
+<ul>
+<li>功能开关: 单独控制关注答谢的启用/禁用</li>
+<li>选取模式: 随机/顺序选取文案</li>
+<li>触发时机: 用户关注主播时</li>
+<li>动态变量: <code>{username}</code> 用于替换用户名</li>
+</ul>
+</li>
+</ol>
+<h4 id="_29">文案编写规则</h4>
+<ol>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
+<li>支持多条文案,每行一条</li>
+<li>随机模式: 从所有文案中随机选择</li>
+<li>顺序模式: 按顺序循环使用文案</li>
+<li>文案用完后会自动重新开始</li>
+</ul>
+</li>
+<li>
+<p><strong>动态变量</strong>
+      每种答谢类型支持不同的动态变量,使用<code>{变量名}</code>格式</p>
+</li>
+<li>
+<p><strong>随机语法</strong>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
+<p>示例:
+  <div class="highlight"><pre><span></span><code>感谢[可爱的|善良的|热情的]{username}[进入直播间|来到直播间]~
+感谢{username}赠送的{gift_num}个{gift_name},[太棒了|好开心|非常感谢]!
+[欢迎|感谢]{username}[关注|订阅]主播,[一起来玩吧|请多关照]~
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="_30">使用场景</h4>
+<ol>
+<li>
+<p><strong>提升互动体验</strong></p>
+<ul>
+<li>及时回应用户行为</li>
+<li>增强用户参与感</li>
+<li>营造温馨的直播氛围</li>
+</ul>
+</li>
+<li>
+<p><strong>礼物激励</strong></p>
+<ul>
+<li>及时感谢打赏用户</li>
+<li>设置合理的最低答谢门槛</li>
+<li>鼓励用户互动打赏</li>
+</ul>
+</li>
+<li>
+<p><strong>粉丝维护</strong></p>
+<ul>
+<li>对新关注用户表示感谢</li>
+<li>增加用户归属感</li>
+<li>提高粉丝留存率</li>
+</ul>
+</li>
+</ol>
+<h4 id="_31">使用建议</h4>
+<ol>
+<li>
+<p><strong>开关管理</strong></p>
+<ul>
+<li>根据直播需求灵活开启/关闭各类答谢</li>
+<li>避免过多答谢影响直播节奏</li>
+<li>合理使用随机/顺序模式</li>
+</ul>
+</li>
+<li>
+<p><strong>文案编写</strong></p>
+<ul>
+<li>准备充足的文案内容</li>
+<li>善用随机语法增加变化</li>
+<li>保持文案风格统一</li>
+<li>注意礼貌用语</li>
+<li>避免过于机械的表达</li>
+</ul>
+</li>
+<li>
+<p><strong>礼物答谢设置</strong></p>
+<ul>
+<li>合理设置最低答谢价格</li>
+<li>可以针对不同价值礼物准备不同档次文案</li>
+<li>高价值礼物建议使用更热情的答谢方式</li>
+</ul>
+</li>
+<li>
+<p><strong>运行维护</strong></p>
+<ul>
+<li>定期更新文案内容</li>
+<li>观察答谢效果</li>
+<li>及时调整配置</li>
+<li>注意避免重复答谢</li>
+</ul>
+</li>
+</ol>
+<h3 id="6">6. 闲时任务</h3>
+<p>闲时任务用于在直播间互动较少时维持活跃度,可以自动发送预设的话术内容。</p>
+<h4 id="_32">基础设置</h4>
+<ul>
+<li><strong>闲时任务总开关</strong>: 控制所有闲时任务的启用/禁用状态</li>
+<li>只有开启总开关后,配置的闲时任务才会生效</li>
+</ul>
+<h4 id="_33">运行机制</h4>
+<p>支持三种运行机制:</p>
+<ol>
+<li>
+<p><strong>直播间无消息更新闲时</strong>  </p>
+<ul>
+<li>根据设定的时间范围触发任务</li>
+<li>可以设置哪些类型的消息会刷新计时:<ul>
+<li>弹幕消息</li>
+<li>礼物消息</li>
+<li>入场消息</li>
+<li>关注消息</li>
+</ul>
+</li>
+<li>配置项:<ul>
+<li>最小闲时时间: 两次触发的最短间隔(秒)</li>
+<li>最大闲时时间: 两次触发的最长间隔(秒)</li>
+<li>闲时计时减小到: 收到消息时重置的时间值</li>
+<li>刷新计时的消息类型: 勾选需要响应的消息类型</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>待合成消息队列更新闲时</strong>  </p>
+<ul>
+<li>监控待合成消息队列的长度</li>
+<li>当队列长度小于设定值时触发任务</li>
+<li>配置项:<ul>
+<li>待合成消息队列个数小于此值时触发: 触发任务的队列长度阈值</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>待播放音频队列更新闲时</strong>  </p>
+<ul>
+<li>监控待播放音频队列的长度</li>
+<li>当队列长度小于设定值时触发任务</li>
+<li>配置项:<ul>
+<li>待播放音频队列个数小于此值时触发: 触发任务的队列长度阈值</li>
+</ul>
+</li>
+<li>注意: 此机制需要配合定制版LiveTalking才能生效</li>
+</ul>
+</li>
+</ol>
+<h4 id="_34">触发内容配置</h4>
+<ol>
+<li>
+<p><strong>文案模式</strong></p>
+<ul>
+<li>开关控制: 可单独启用/禁用文案模式</li>
+<li>文案组管理:<ul>
+<li>支持创建多个文案组</li>
+<li>每个组可以设置:</li>
+<li>组名称: 方便管理和识别</li>
+<li>排序: 决定触发顺序</li>
+<li>提取方式: 随机/顺序</li>
+<li>文案内容: 每行一条</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>弹幕触发LLM模式</strong></p>
+<ul>
+<li>开关控制: 可单独启用/禁用弹幕模式</li>
+<li>提取方式: 随机/固定顺序</li>
+<li>弹幕列表: 配置预设的弹幕内容(每行一条)</li>
+</ul>
+</li>
+</ol>
+<h4 id="_35">文案编写规则</h4>
+<ol>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
+<li>支持多条文案,每行一条</li>
+<li>系统会根据设置随机或顺序发送</li>
+<li>文案组用完后会自动重新开始</li>
+</ul>
+</li>
+<li>
+<p><strong>动态变量</strong>
+      文案中可以使用以下变量:</p>
+<ul>
+<li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
+<li><code>{last_username}</code>: 最后发言的用户名</li>
+<li><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</li>
+</ul>
+</li>
+<li>
+<p><strong>随机语法</strong>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
+<p>示例:
+  <div class="highlight"><pre><span></span><code>现在是{time},[好安静|好冷清]呀~
+[有人在吗|还有人在看直播吗]?
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="_36">使用场景</h4>
+<ol>
+<li>
+<p><strong>维持直播间活跃</strong></p>
+<ul>
+<li>在直播间互动较少时自动发送话术</li>
+<li>避免直播间过于安静</li>
+</ul>
+</li>
+<li>
+<p><strong>商品推广</strong></p>
+<ul>
+<li>定期发送商品介绍</li>
+<li>保持商品曝光度</li>
+<li>可以设置多个商品话术轮换</li>
+</ul>
+</li>
+<li>
+<p><strong>互动引导</strong></p>
+<ul>
+<li>引导观众互动</li>
+<li>活跃直播间氛围</li>
+<li>增加用户粘性</li>
+</ul>
+</li>
+</ol>
+<h4 id="_37">使用建议</h4>
+<ol>
+<li>
+<p><strong>机制选择</strong></p>
+<ul>
+<li>根据实际需求选择合适的运行机制</li>
+<li>新手建议使用"直播间无消息更新闲时"</li>
+<li>合理设置触发阈值,避免过于频繁</li>
+</ul>
+</li>
+<li>
+<p><strong>时间设置</strong></p>
+<ul>
+<li>最小间隔建议不低于5秒</li>
+<li>最大间隔建议不超过300秒</li>
+<li>根据直播间实际情况调整（如果拿闲时任务做主要话术来播放，那不建议通过时间来限制任务触发，而是改用队列长度来限制）</li>
+</ul>
+</li>
+<li>
+<p><strong>内容编排</strong></p>
+<ul>
+<li>准备充足的文案内容</li>
+<li>合理分组和排序</li>
+<li>适当使用随机语法增加变化</li>
+<li>内容要自然,避免机械感</li>
+</ul>
+</li>
+<li>
+<p><strong>运行维护</strong></p>
+<ul>
+<li>定期检查任务运行状态</li>
+<li>及时更新文案内容</li>
+<li>观察效果及时调整配置</li>
+</ul>
+</li>
+</ol>
+<h3 id="7">7. 定时任务</h3>
+<p>定时任务用于按照预设规则自动发送话术,让直播间保持活跃度。</p>
+<h4 id="_38">基础设置</h4>
+<ul>
+<li><strong>定时任务总开关</strong>: 控制所有定时任务的启用/禁用状态</li>
+<li>只有开启总开关后,配置的定时任务才会生效</li>
+</ul>
+<h4 id="_39">任务管理</h4>
+<p>在任务列表页面可以进行以下操作:  </p>
+<ul>
+<li>添加新任务  </li>
+<li>编辑已有任务  </li>
+<li>删除任务  </li>
+<li>批量删除任务  </li>
+</ul>
+<h4 id="_40">任务配置项</h4>
+<p>每个定时任务需要配置以下内容:  </p>
+<ul>
+<li><strong>触发类型</strong>: 目前支持"发送文案"  </li>
+<li><strong>触发周期最小值</strong>: 两次触发之间的最短时间(秒)  </li>
+<li><strong>触发周期最大值</strong>: 两次触发之间的最长时间(秒)  </li>
+<li><strong>文案内容</strong>: 要发送的话术内容  </li>
+</ul>
+<h4 id="_41">文案编写规则</h4>
+<ol>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
+<li>支持多条文案,每行一条</li>
+<li>系统会随机抽取一条发送</li>
+<li>已发送的文案会被临时移除,避免重复</li>
+<li>所有文案发送完后会重新开始</li>
+</ul>
+</li>
+<li>
+<p><strong>动态变量</strong>
+      文案中可以使用以下变量:</p>
+<ul>
+<li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
+<li><code>{last_username}</code>: 最后发言的用户名</li>
+<li><code>{user_num}</code>: 当前在线用户数(仅抖音/TikTok平台支持)</li>
+</ul>
+</li>
+<li>
+<p><strong>随机语法</strong>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
+<p>示例:
+  <div class="highlight"><pre><span></span><code>欢迎来到[小主播|主播]的直播间~
+今天[好热|好冷|天气真好]呀
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="_42">使用场景</h4>
+<ol>
+<li>
+<p><strong>维持直播间活跃</strong></p>
+<ul>
+<li>在直播间互动较少时自动发送话术</li>
+<li>保持直播间的活跃氛围</li>
+</ul>
+</li>
+<li>
+<p><strong>商品推广</strong></p>
+<ul>
+<li>定期发送商品介绍</li>
+<li>保持商品曝光度</li>
+<li>可以设置多个不同文案轮换发送</li>
+</ul>
+</li>
+<li>
+<p><strong>规则提醒</strong></p>
+<ul>
+<li>定时发送直播间规则</li>
+<li>友好提醒观众遵守规范</li>
+<li>维护直播间秩序</li>
+</ul>
+</li>
+</ol>
+<h4 id="_43">使用建议</h4>
+<ol>
+<li>
+<p><strong>时间设置</strong></p>
+<ul>
+<li>建议最小间隔不要低于60秒</li>
+<li>最大间隔建议不超过300秒</li>
+<li>根据直播间实际情况调整</li>
+</ul>
+</li>
+<li>
+<p><strong>文案编写</strong></p>
+<ul>
+<li>准备多条不同内容的文案</li>
+<li>善用随机语法增加变化</li>
+<li>内容要自然,避免机械感</li>
+</ul>
+</li>
+<li>
+<p><strong>运行维护</strong></p>
+<ul>
+<li>定期检查任务运行状态</li>
+<li>及时更新文案内容</li>
+<li>根据效果调整触发时间</li>
+</ul>
+</li>
+</ol>
+<h3 id="8">8. 本地问答</h3>
+<p>本地问答系统用于自动回复用户的问题,通过关键词匹配来触发预设的回答内容。</p>
+<h4 id="_44">基础设置</h4>
+<ul>
+<li><strong>本地问答总开关</strong>: 控制所有本地问答的启用/禁用状态  </li>
+<li><strong>匹配算法</strong>: 可选择以下两种匹配方式  </li>
+<li>相似度匹配: 计算输入文本与每个关键词的相似度,适用于需要精确匹配的场景  </li>
+<li>模糊匹配: 先检查关键词是否包含在输入中再计算相似度,适用于部分匹配的场景  </li>
+</ul>
+<h4 id="_45">问答管理</h4>
+<p>在问答列表页面可以进行以下操作:  </p>
+<ul>
+<li>添加新问答  </li>
+<li>编辑已有问答  </li>
+<li>删除问答  </li>
+<li>批量删除问答  </li>
+</ul>
+<h4 id="_46">配置项说明</h4>
+<p>每个问答需要配置以下内容:  </p>
+<ul>
+<li><strong>触发类型</strong>: 目前支持"发送文案"  </li>
+<li><strong>最低相似/匹配度</strong>: 设置触发回答的最低匹配程度  </li>
+<li><strong>关键词</strong>: 触发回答的关键词列表(每行一个)  </li>
+<li><strong>回答内容</strong>: 匹配成功后发送的回答内容  </li>
+</ul>
+<h4 id="_47">文案编写规则</h4>
+<ol>
+<li>
+<p><strong>基础规则</strong></p>
+<ul>
+<li>支持多条回答文案,每行一条</li>
+<li>系统会随机抽取一条发送</li>
+<li>支持多个关键词,每行一个</li>
+<li>任一关键词匹配达到相似度要求即可触发</li>
+</ul>
+</li>
+<li>
+<p><strong>动态变量</strong>
+      回答内容中可以使用以下变量:</p>
+<ul>
+<li><code>{username}</code>: 提问用户的用户名</li>
+<li><code>{cur_time}</code> 或 <code>{time}</code>: 当前北京时间</li>
+</ul>
+</li>
+<li>
+<p><strong>随机语法</strong>
+      支持使用<code>[选项1|选项2|选项3]</code>格式来随机选择内容</p>
+<p>示例:
+  <div class="highlight"><pre><span></span><code>感谢[亲爱的|可爱的]{username}提问~
+现在是{time},我来为您解答[这个|这样的]问题
+</code></pre></div></p>
+</li>
+</ol>
+<h4 id="_48">使用场景</h4>
+<ol>
+<li>
+<p><strong>常见问题解答</strong></p>
+<ul>
+<li>设置常见问题的关键词和答案</li>
+<li>自动回复重复性问题</li>
+<li>减轻人工回答压力</li>
+</ul>
+</li>
+<li>
+<p><strong>直播间引导</strong></p>
+<ul>
+<li>回答直播间规则相关问题</li>
+<li>解答商品相关咨询</li>
+<li>活动玩法说明</li>
+</ul>
+</li>
+<li>
+<p><strong>互动增强</strong></p>
+<ul>
+<li>设置趣味性的问答</li>
+<li>增加直播间的互动性</li>
+<li>活跃直播间氛围</li>
+</ul>
+</li>
+</ol>
+<h4 id="_49">使用建议</h4>
+<ol>
+<li>
+<p><strong>关键词设置</strong></p>
+<ul>
+<li>设置多个相近的关键词形式</li>
+<li>考虑用户可能的不同表达方式</li>
+<li>适当调整最低匹配度阈值</li>
+</ul>
+</li>
+<li>
+<p><strong>回答编写</strong></p>
+<ul>
+<li>准备多个不同的回答版本</li>
+<li>使用随机语法增加变化</li>
+<li>回答要自然友好,避免机械感</li>
+</ul>
+</li>
+<li>
+<p><strong>运行维护</strong></p>
+<ul>
+<li>定期检查匹配效果</li>
+<li>及时更新问答内容</li>
+<li>根据实际效果调整配置</li>
+</ul>
+</li>
+</ol>
+<h2 id="_50">最佳实践</h2>
+<ol>
+<li>
+<p>配置管理</p>
+<ul>
+<li>定期备份配置</li>
+<li>使用模板快速部署</li>
+<li>及时更新配置</li>
+</ul>
+</li>
+<li>
+<p>性能优化</p>
+<ul>
+<li>合理设置优先级</li>
+<li>适当的过滤规则</li>
+<li>控制任务频率</li>
+</ul>
+</li>
+<li>
+<p>内容管理</p>
+<ul>
+<li>定期更新违禁词库</li>
+<li>优化回复模板</li>
+<li>维护问答库</li>
+</ul>
+</li>
+</ol>
+<h2 id="_51">常见问题</h2>
+<ol>
+<li>
+<p>配置不生效</p>
+<ul>
+<li>检查配置格式</li>
+<li>确认保存成功</li>
+<li>可能需要重启服务</li>
+</ul>
+</li>
+<li>
+<p>任务执行异常</p>
+<ul>
+<li>查看错误日志</li>
+<li>检查触发条件</li>
+<li>验证配置正确性</li>
+</ul>
+</li>
+<li>
+<p>性能问题</p>
+<ul>
+<li>优化过滤规则</li>
+<li>调整任务频率</li>
+<li>清理历史数据</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Ikaros-521/LX_AI">洛曦AI</a> & Ikaros-521
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.tabs.link", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>
